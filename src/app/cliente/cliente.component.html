@@ -1,0 +1,17 @@
+<main class="container">
+    <a routerLink="/clientes/novo" class="btn btn-primary">Novo</a>
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Sexo</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let umCliente of listaClientes">
+                <td>{{umCliente.id}}</td>
+                <td>{{umCliente.nome}}</td>
+                <td>{{umCliente.sexo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</main>

@@ -1,0 +1,15 @@
+
+<main class="container">
+    <div class="form-group">
+        <label for="txtnome">Nome:</label>
+        <input type="text" [(ngModel)]="cliente.nome"
+            class="form-control" id="txtnome">
+    </div>
+    <div class="form-group">
+        <label for="txtsexo">Sexo:</label>
+        <input type="text" [(ngModel)]="cliente.sexo"
+            class="form-control" id="txtsexo">
+    </div>
+    <button class="btn btn-primary"
+        (click)="salvar()">Enviar</button>
+</main>
